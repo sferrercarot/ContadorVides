@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/P1Pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/P1Pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/P2Pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/P2Pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/P2Lp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#D2CFCF"
+        android:src="@drawable/baseline_favorite_24"
+        android:tint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/P2Pp"
+        app:layout_constraintEnd_toEndOf="@+id/P2Pp"
+        app:layout_constraintStart_toStartOf="@+id/P2Pp"
+        app:layout_constraintTop_toBottomOf="@+id/AP2" />
+
+    <ImageView
+        android:id="@+id/P2Lm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#D2CFCF"
+        android:src="@drawable/baseline_favorite_border_24"
+        android:tint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/P2Pm"
+        app:layout_constraintEnd_toEndOf="@+id/P2Pm"
+        app:layout_constraintStart_toStartOf="@+id/P2Pm"
+        app:layout_constraintTop_toBottomOf="@+id/AP2" />
+
+    <ImageView
+        android:id="@+id/AP2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#BDB5B5"
+        android:src="@drawable/baseline_arrow_upward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/AP1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#BDB5B5"
+        android:src="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/P1Lp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#D2CFCF"
+        android:src="@drawable/baseline_favorite_24"
+        android:tint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/AP1"
+        app:layout_constraintEnd_toEndOf="@+id/P1Pp"
+        app:layout_constraintStart_toStartOf="@+id/P1Pp"
+        app:layout_constraintTop_toBottomOf="@+id/P1Pp" />
+
+    <ImageView
+        android:id="@+id/P1Lm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#D2CFCF"
+        android:src="@drawable/baseline_favorite_border_24"
+        android:tint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/AP1"
+        app:layout_constraintEnd_toEndOf="@+id/P1Pm"
+        app:layout_constraintStart_toStartOf="@+id/P1Pm"
+        app:layout_constraintTop_toBottomOf="@+id/P1Pm" />
+
+    <TextView
+        android:id="@+id/textViewP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/AP1"
+        app:layout_constraintEnd_toStartOf="@+id/P1Lm"
+        app:layout_constraintStart_toEndOf="@+id/P1Lp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/P2Lm"
+        app:layout_constraintStart_toEndOf="@+id/P2Lp"
+        app:layout_constraintTop_toBottomOf="@+id/AP2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
